@@ -1,0 +1,40 @@
+.countdown {
+    background-color: #EDEDED;
+    border-radius: 19px;
+    // height: 293px;
+    margin-top: 243px;
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 92px;
+        height: 293px;
+    }
+
+    &-item {
+        width: 330px;
+        text-align: center;
+    }
+
+    &-item+.countdown-item {
+        border-left: 1px solid #BBBBBB;
+
+    }
+
+    &-heading {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 7rem;
+        color: $black-color;
+        margin-top: 91px;
+    }
+
+    &-desc {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 7;
+        margin-top: 8px;
+        color: #6C6C6C;
+    }
+}

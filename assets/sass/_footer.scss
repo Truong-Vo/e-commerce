@@ -1,0 +1,24 @@
+.footer {
+    background-color: $dark-purple-color ;
+    margin: 0 auto;
+    height: 520px;
+    // padding: 164px 176px 0 164px;
+    border-bottom: 41px solid $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+        margin-left: 164px;
+        background-color: aqua;
+        flex: 1;
+        height: 100%;
+    }
+
+    &-right {
+        margin-right: 176px;
+        background-color: $white-color;
+        flex: 1;
+        height: 100%;
+    }
+}

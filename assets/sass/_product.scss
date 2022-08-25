@@ -1,0 +1,101 @@
+.product {
+    margin-top: 157px;
+
+    &-heading {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 4.6rem;
+            color: $black-color;
+            text-align: center;
+        }
+
+        a {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            font-weight: 500;
+            padding: 26px 34px;
+            border-radius: 8px;
+
+            i {
+                display: inline-block;
+                margin-left: 21px;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1170px;
+        margin-top: 74px;
+        // gap: 0 24px;
+
+    }
+
+    &-item {
+        border-radius: 6px;
+        background-color: $white-color;
+        box-shadow: 5px 5px 10px #E8E8E8;
+
+
+        &:hover {
+            animation: hover forwards .3s;
+        }
+    }
+
+
+
+    &-image {
+        object-fit: contain;
+        display: block;
+    }
+
+    &-desc {
+        font-weight: 600;
+        line-height: 2.8rem;
+        padding: 35px 21px 35px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-label {
+        font-size: 1.8rem;
+        color: $text-color;
+    }
+
+    &-btn {
+        border-radius: 4px;
+        font-size: 1.6rem;
+        padding: 8px 21px;
+        min-width: unset;
+    }
+
+    &-price {
+        font-size: 2rem;
+
+        span {
+            font-size: 1.5rem;
+            color: $primary-color;
+        }
+    }
+
+    &-sell {
+        margin-left: 49px;
+        font-size: 1.4rem;
+        line-height: 1rem;
+        font-weight: 400;
+        color: #929191;
+        text-decoration: line-through;
+    }
+}

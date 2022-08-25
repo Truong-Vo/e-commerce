@@ -1,0 +1,33 @@
+// fonts
+$font-main: "Poppins", sans-serif;
+$font-sub: 'Roboto', sans-serif;
+
+// colors
+$primary-color: #FE9E66;
+$text-color: #23254B;
+$black-color: #000;
+$white-color: #fff;
+$dark-purple-color: #121329;
+$blur-color: #FFA16A;
+$dark-silver-color: #EDEDED;
+$gray-color: #75797C;
+$shadow-color: #E4E3E3;
+$heading-color: #2F395E;
+
+
+// dimensions
+$header-height: 89px;
+
+
+.text-white-color {
+    color: $white-color  !important;
+}
+
+.text-color {
+    color: $text-color  !important;
+}
+
+
+.bgc-color {
+    background-color: $text-color  !important;
+}

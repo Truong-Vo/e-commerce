@@ -1,0 +1,89 @@
+.experience {
+    display: block;
+    background-color: $dark-silver-color;
+    margin-top: 236px;
+    width: 1170px;
+    height: 243px;
+    // overflow: hidden;
+    position: relative;
+
+    p {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 2.8rem;
+        line-height: 4.6rem;
+        color: $heading-color;
+        margin-left: 88px;
+        margin-top: 50px;
+        width: 360px;
+    }
+
+    &-logo {
+        float: right;
+        margin: 30px 58px 35px 0;
+    }
+
+    &-comma {
+        position: absolute;
+        width: 95px;
+        height: 60px;
+        bottom: 18px;
+        left: 363px;
+    }
+
+    &-image {
+        position: absolute;
+        width: 168px;
+        top: -16px;
+        left: 528px;
+        z-index: 1;
+    }
+
+    &-video {
+        position: absolute;
+        width: 223px;
+        top: -112px;
+        left: 638px;
+        z-index: 1;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        i {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            border-radius: 50%;
+            color: $white-color;
+            z-index: 1;
+
+
+        }
+    }
+
+    &::after {
+        content: "";
+        background-image: url(../images/abstract.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        top: 142px;
+        left: 765px;
+    }
+
+}

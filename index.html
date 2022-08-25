@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<!-- sass ./sass/app.scss css/app.css -->
+
+<body>
+    <div class="app">
+        <!-- Header -->
+
+        <div class="header">
+            <div class="grid">
+                <div class="header-container">
+                    <!-- logo -->
+                    <a href="#" class="header-logo">
+                        <img class="header-logo-img" srcset="./assets/images/Vector.png 2x"
+                            src="./assets/images/Vector.png" alt="" />
+                        <p class="header-brand">Pra<span>oud</span></p>
+                    </a>
+                    <!-- menu -->
+                    <ul class="header-menu">
+                        <li class="header-item header-item--active">
+                            <a class="header-link" href="">Home</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="">Shop</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="">Features</a>
+                        </li>
+                        <li class="header-item">
+                            <a class="header-link" href="">Pricing</a>
+                        </li>
+                    </ul>
+                    <!-- contact -->
+
+                    <a href="#" class="button button-square header-contact">Contact Us</a>
+                </div>
+                <!-- Hero -->
+                <div class="hero">
+                    <div class="hero-left">
+                        <h1 class="hero-left--heading">All Your Style <strong>Are Here</strong></h1>
+                        <p class="hero-left--subheading">
+                            This e commerce website is a platform where you can order or purchase electronic items.
+                            You can also find different items.
+                        </p>
+                        <div class="hero-left-group">
+                            <button>
+                                <a href="" class="button button-primary">Explore Now</a>
+                            </button>
+                            <div class="hero-left-group-video">
+                                <div class="hero-left-group-video-btn__play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <p class="hero-left-group-video-title">Watch a Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="hero-image" srcset="./assets/images/Tshirt.png 2x" src="./assets/images/Tshirt.png"
+                        alt="" />
+                    <div class="hero-right">
+                        <div class="intro-container">
+                            <div class="intro-item">
+                                <div class="intro-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="intro-info">
+                                    <div class="intro-title">1332</div>
+                                    <div class="intro-text">Year</div>
+                                </div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-icon">
+                                    <i class="fas fa-om"></i>
+                                </div>
+                                <div class="intro-info">
+                                    <div class="intro-title">28</div>
+                                    <div class="intro-text">Bids so far</div>
+                                </div>
+                            </div>
+                            <div class="intro-item">
+                                <div class="intro-icon">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                                <div class="intro-info">
+                                    <div class="intro-title">United</div>
+                                    <div class="intro-text">Origin</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="search-item">
+                        <div class="search-contain">
+                            <p class="search-label">Location</h2>
+                            <div class="search-content">
+                                <p class="search-desc">
+                                    United Stated
+                                    <i class="fas fa-angle-down"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <div class="search-contain">
+                            <p class="search-label">Date</p>
+                            <div class="search-content">
+                                <p class="search-desc">
+                                    14-12-21
+                                    <i class="fas fa-angle-down"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <div class="search-contain">
+                            <p class="search-label">Year</p>
+                            <div class="search-content">
+                                <p class="search-desc">
+                                    793 AD
+                                    <i class="fas fa-angle-down"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <div class="search-contain">
+                            <p class="search-label">Type</p>
+                            <div class="search-content">
+                                <p class="search-desc">
+                                    Weapons
+                                    <i class="fas fa-angle-down"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button-primary search-button">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Experience -->
+        <div class="grid wide">
+            <section class="experience">
+                <p>Our experience to always update the lates stayles”</p>
+                <img class="experience-logo" src="./assets/images/Vector.svg" alt="">
+                <img class="experience-image" srcset="./assets/images/Rectangle14.png 2x"
+                    src="./assets/images/Rectangle14.png" alt="">
+                <img class="experience-comma" src="./assets/images/comma.png" alt="">
+                <div class="experience-video">
+                    <img srcset="./assets/images/man.png 2x" src="./assets/images/man.png" alt="">
+                    <i class="fas fa-play"></i>
+                </div>
+            </section>
+            <!-- Products -->
+            <section class="product">
+                <div class="product-heading">
+                    <h2>Our best seller product</h2>
+                    <a class="button button-primary">
+                        See all Product
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <ul class="product-list">
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/Rectangle16.png 2x"
+                            src="./assets/images/Rectangle16.png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-primary product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/Rectangle17.png 2x"
+                            src="./assets/images/Rectangle17.png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-square product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/Rectangle18.png 2x"
+                            src="./assets/images/Rectangle18.png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-square product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/Rectangle19.png 2x"
+                            src="./assets/images/Rectangle19.png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-square product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- favourite -->
+            <section class="favourite">
+                <h2 class="favourite-heading">Looking for favourite t-shirt ?</h2>
+                <ul class="favourite-list">
+                    <li class="favourite-item ">All</li>
+                    <li class="favourite-item">Assecories</li>
+                    <li class="favourite-item favourite-item--active">Catagories</li>
+                    <li class="favourite-item ">T-sirt </li>
+                </ul>
+                <div class="favourite-content">
+                    <div class="favourite-video">
+                        <img src="./assets/images/Rectangle5221.png" alt="">
+                        <span class="favourite-play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </div>
+
+                    <div class="favourite-desc">
+                        <h2>Why
+                            Choose Us</h2>
+                        <p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night
+                            life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent </p>
+                        <button class="button button-primary favourite-button">
+                            <a href="">ORDER NOW</a>
+                        </button>
+                    </div>
+                    <img class="favourite-product" srcset="./assets/images/Rectangle5222.png 2x"
+                        src="./assets/images/Rectangle5222.png" alt="">
+                </div>
+            </section>
+            <!-- Custom -->
+            <section class="card">
+                <ul class="card-list">
+                    <li class="card-item">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-heading">Years Experience</h3>
+                        <p class="card-desc">Fashion yourself as a Payfast application user</p>
+                        <button class="card-readmore">Read More</button>
+                        <button class="button button-square card-button">See More</button>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-icon bgc-color">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-heading">Years Experience</h3>
+                        <p class="card-desc text-white-color">Fashion yourself as a Payfast application user</p>
+                        <button class="card-readmore text-color">Read More</button>
+                        <button class="button button-square card-button">See More</button>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="card-heading">Years Experience</h3>
+                        <p class="card-desc">Fashion yourself as a Payfast application user</p>
+                        <button class="card-readmore">Read More</button>
+                        <button class="button button-square card-button">See More</button>
+                    </li>
+                </ul>
+                <img src="./assets/images/Vector2413.png" alt="" class="card-image-left">
+                <img src="./assets/images/Vector2413.png" alt="" class="card-image-right">
+            </section>
+            <!-- Countdown -->
+            <section class="countdown">
+                <ul class="countdown-list">
+                    <li class="countdown-item">
+                        <h3 class="countdown-heading">36+</h3>
+                        <p class="countdown-desc">User Trust</p>
+                    </li>
+                    <li class="countdown-item">
+                        <h3 class="countdown-heading">42k+</h3>
+                        <p class="countdown-desc">Brand Vision</p>
+                    </li>
+                    <li class="countdown-item">
+                        <h3 class="countdown-heading">8k+</h3>
+                        <p class="countdown-desc">Achievment</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- Products -->
+            <section class="product">
+                <div class="product-heading">
+                    <h2>Our best seller product</h2>
+                    <a class="button button-primary">
+                        See all Product
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <ul class="product-list">
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/man(1).png 2x"
+                            src="./assets/images/man(1).png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-primary product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/man(2).png 2x"
+                            src="./assets/images/man(2).png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-square product-btn">BUY</button>
+
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <img class="product-image" srcset="./assets/images/man(3).png 2x"
+                            src="./assets/images/man(3).png" alt="">
+                        <div class="product-desc">
+                            <div class="product-content">
+                                <h3 class="product-label">Smart t- Sirt</h3>
+                                <button class="button button-square product-btn">BUY</button>
+                            </div>
+                            <p class="product-price">40<span>$</span></p>
+                            <p class="product-sell">100$</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- favourite -->
+            <section class="favourite">
+                <h2 class="favourite-heading">Looking for favourite t-shirt ?</h2>
+                <ul class="favourite-list">
+                    <li class="favourite-item ">All</li>
+                    <li class="favourite-item">Assecories</li>
+                    <li class="favourite-item favourite-item--active">Catagories</li>
+                    <li class="favourite-item ">T-sirt </li>
+                </ul>
+                <div class="favourite-content">
+                    <div class="favourite-video">
+                        <img src="./assets/images/Rectangle5221.png" alt="">
+                        <span class="favourite-play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </div>
+
+                    <div class="favourite-desc">
+                        <h2>Why
+                            Choose Us</h2>
+                        <p>Get lost on the beautiful beaches of United, or get caught up in the wildness of the night
+                            life. Its up to you. Nihil quaeque moderatius quo ut, eu vix noster fierent </p>
+                        <button class="button button-primary favourite-button">
+                            <a href="">ORDER NOW</a>
+                        </button>
+                    </div>
+                    <img class="favourite-product" srcset="./assets/images/Rectangle5222.png 2x"
+                        src="./assets/images/Rectangle5222.png" alt="">
+                </div>
+            </section>
+            <!-- footer -->
+        </div>
+        <footer>
+            <div class="footer">
+                    <div class="footer-left"></div>
+                    <div class="footer-right"></div>
+            </div>
+        </footer>
+</body>
+
+</html>

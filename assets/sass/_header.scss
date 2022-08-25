@@ -1,0 +1,105 @@
+.header {
+    max-width: 1382px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F9F9F9;
+    // height: 830px;
+    position: relative;
+    overflow: hidden;
+
+    &-container {
+        width: 1279px;
+        margin: 0 auto;
+        height: $header-height;
+        background-color: $white-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $font-sub;
+        box-shadow: 5px 5px 8px $shadow-color;
+
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    &-logo-img {
+        margin-left: 42px;
+        margin-right: 16px;
+    }
+
+    &-brand {
+        font-weight: 700;
+        color: $black-color;
+
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &-menu {
+        display: flex;
+    }
+
+    &-item {
+        font-family: $font-sub;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #101010;
+        line-height: calc($header-height - 3px);
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-bottom: 3px solid $primary-color;
+            color: $primary-color;
+        }
+    }
+
+    &-link {
+        line-height: 2.1rem;
+        color: currentColor;
+
+
+    }
+
+    &-item--active {
+        font-weight: 500;
+        border-bottom: 3px solid $primary-color;
+    }
+
+
+    &-item+.header-item {
+        margin-left: 40px;
+    }
+
+    &-contact {
+        margin-right: 24px;
+    }
+
+    &::before {
+        content: "";
+        background-image: url(../images/abstract.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        top: 169px;
+        left: 547px;
+    }
+
+    &::after {
+        content: "";
+        background-image: url(../images/abstract.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        top: 527px;
+        left: 942px;
+    }
+}

@@ -1,0 +1,30 @@
+.button {
+    display: inline-block;
+    color: $white-color;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 500;
+
+    a {
+        color: $white-color;
+
+    }
+
+    &-primary {
+        min-width: 143px;
+        background-color: $primary-color;
+        padding: 20px 49px;
+        border-radius: 14px;
+    }
+
+    &-square {
+        background-color: $dark-purple-color;
+        padding: 16px 27px;
+        border-radius: 6px;
+    }
+
+    &:hover {
+        // background-color: rgba(0, 0, 0, 0.8)
+        opacity: 0.8;
+    }
+}
