@@ -1,0 +1,76 @@
+$border-width: 10px;
+$border-height: 3px;
+
+.pricing {
+    margin-top: 182px;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        background-image: url(../images/abstract.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        bottom: 43px;
+        left: -13px;
+        transform: rotate(-90deg);
+    }
+
+    &-heading {
+        font-size: 6rem;
+        line-height: calc(70 / 60);
+        text-align: center;
+    }
+
+    &-list {
+        width: 883px;
+        margin: 75px auto;
+        padding: 15px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(0deg, #f4f4f4, #f4f4f4),
+            linear-gradient(0deg, $white-color, $white-color);
+        background-clip: content-box, padding-box;
+        border-radius: 7px;
+        box-shadow: 5px 5px 10px #e8e8e8;
+    }
+
+    &-item {
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: $text-color;
+        cursor: pointer;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: relative;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &--active {
+            color: $primary-color;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: calc(100% + calc(15px - $border-height));
+                left: $border-width;
+                background-color: $text-color;
+                height: $border-height;
+                width: calc(100% - calc($border-width *2));
+            }
+
+        }
+
+    }
+
+    &-item+.pricing-item {
+        margin-left: 85px;
+    }
+
+}

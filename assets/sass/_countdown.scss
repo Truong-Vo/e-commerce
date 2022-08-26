@@ -8,33 +8,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 92px;
-        height: 293px;
+        padding: 92px 92px 81px 92px;
+        // height: 293px;
     }
 
     &-item {
         width: 330px;
         text-align: center;
+        position: relative;
     }
 
     &-item+.countdown-item {
-        border-left: 1px solid #BBBBBB;
+        border-left: 1.5px solid #BBBBBB;
 
     }
 
     &-heading {
         font-weight: 600;
         font-size: 6rem;
-        line-height: 7rem;
+        line-height: 6rem;
         color: $black-color;
-        margin-top: 91px;
     }
 
     &-desc {
         font-weight: 500;
         font-size: 2rem;
-        line-height: 7;
-        margin-top: 8px;
+        margin-top: 44px;
         color: #6C6C6C;
     }
 }

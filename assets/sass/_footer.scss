@@ -1,24 +1,95 @@
 .footer {
     background-color: $dark-purple-color ;
-    margin: 0 auto;
     height: 520px;
-    // padding: 164px 176px 0 164px;
     border-bottom: 41px solid $primary-color;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+
+    &-content {
+        width: 1102px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+    }
 
     &-left {
-        margin-left: 164px;
-        background-color: aqua;
-        flex: 1;
         height: 100%;
+        margin-right: 166px;
+
+
+        a {
+            color: $white-color;
+            margin-bottom: 28px;
+
+            p {
+                color: $white-color;
+            }
+
+            img {
+                margin-left: unset;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: calc(28 / 18);
+            color: #6B6D89;
+        }
+
+        &-icon {
+            margin-top: 27px;
+            display: flex;
+
+            i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                font-size: 1.8rem;
+                background-color: $primary-color;
+                border-radius: 50%;
+                color: $white-color;
+                margin-right: 13px;
+            }
+        }
     }
 
     &-right {
-        margin-right: 176px;
-        background-color: $white-color;
-        flex: 1;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+    &-list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 546px;
+    }
+
+    &-heading {
+        font-weight: 500;
+        font-size: 2.2rem;
+        color: #FEFEFE;
+        line-height: calc(33 / 22);
+    }
+
+
+
+    &-item {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: calc(35 / 16);
+        color: #6B6D89;
+
+        a {
+            color: currentColor;
+        }
     }
 }
