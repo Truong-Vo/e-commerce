@@ -1,0 +1,23 @@
+    &-content {
+        display: inline-block;
+        margin-left: 170px;
+        color: $white-color;
+        margin-top: 106px;
+
+        h1 {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 6.6rem;
+            letter-spacing: -0.02em;
+            width: 465px;
+            line-height: 6.8rem;
+        }
+
+        p {
+            margin-top: 32px;
+            font-size: 1.8rem;
+            width: 363px;
+            line-height: 2.8rem;
+            color: $white-color;
+        }
+    }

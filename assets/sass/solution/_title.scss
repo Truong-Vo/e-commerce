@@ -1,0 +1,22 @@
+&-title {
+    text-align: center;
+    padding-bottom: 100px;
+
+
+    h2 {
+        // text-align: center;
+        font-weight: 600;
+        font-size: 5rem;
+        letter-spacing: -0.02em;
+        color: $text-heading;
+        line-height: 5.6rem;
+        padding: 75px 188px 25px;
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: $text-paragraph ;
+        padding: 0 328px;
+    }
+}

@@ -1,0 +1,98 @@
+&-decoration {
+
+
+    &-flag {
+        top: 401px;
+        right: 187px;
+        left: unset;
+    }
+
+    &-item {
+        background-color: $pink-red-color;
+        transform: rotate(7.56deg);
+    }
+
+    &-item:nth-of-type(3n+2) {
+        background-color: $medium-purple-color;
+        transform: rotate(7.56deg) translate(144px, -102px);
+    }
+
+    &-item:nth-of-type(3n+3) {
+        background-color: #ECECEC;
+        transform: rotate(7.56deg) translate(144px, -17px);
+    }
+
+    &-item1 {
+        top: 194px;
+        right: 166px;
+        background-color: #ABEFFF !important;
+        transform: rotate(-12.42deg) !important;
+    }
+
+    &-item2 {
+        top: 266px;
+        right: 139px;
+        background-color: #F8F8F8 !important;
+        transform: rotate(-12.42deg) !important;
+    }
+
+    &-list {
+        display: inline-block;
+        position: absolute;
+        width: 73px;
+        height: 85px;
+        background-color: $medium-purple-color;
+        clip-path: polygon(0 14px, 100% 0, 100% calc(100% - 14px), 0 100%);
+        left: 170px;
+        bottom: 5px;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+
+
+        &-one {
+            position: absolute;
+            bottom: 30px;
+            width: 7px;
+            height: 7px;
+            background-color: $pink-red-color;
+        }
+
+        &-two {
+            position: absolute;
+            bottom: 37px;
+            width: 7px;
+            height: 7px;
+            background-color: $pink-red-color;
+            transform: translateX(7px);
+        }
+
+        &-three {
+            position: absolute;
+            bottom: 44px;
+            width: 7px;
+            height: 7px;
+            background-color: $pink-red-color;
+            transform: translateX(14px);
+        }
+
+        &-four {
+            position: absolute;
+            bottom: 37px;
+            width: 7px;
+            height: 7px;
+            background-color: $pink-red-color;
+            transform: translateX(-7px);
+        }
+
+        &-five {
+            position: absolute;
+            bottom: 44px;
+            width: 7px;
+            height: 7px;
+            background-color: $pink-red-color;
+            transform: translateX(-14px);
+        }
+    }
+
+}

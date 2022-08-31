@@ -1,0 +1,116 @@
+.choose {
+    position: relative;
+
+    &-bgc {
+        position: absolute;
+        display: block;
+        width: 650px;
+        height: 667px;
+        right: 0;
+        top: 135px;
+        bottom: 85px;
+        background-color: $medium-purple-color ;
+        clip-path: polygon(84px 0, 100% 0, 100% 100%, 0 100%);
+        z-index: -1;
+
+        &-blur1 {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 118px;
+            height: 118px;
+            top: 0;
+            right: -70px;
+            background: rgba(106, 224, 253, 0.39);
+            filter: blur(130px);
+        }
+
+        &-blur2 {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 248px;
+            height: 248px;
+            top: 137px;
+            right: -110px;
+            background: rgba(106, 224, 253, 0.39);
+            filter: blur(130px);
+        }
+
+        &-blur3 {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 248px;
+            height: 248px;
+            top: 478px;
+            right: 428px;
+            background: rgba(213, 42, 86, 0.27);
+            filter: blur(280px);
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        gap: 35px 30px;
+        padding: 226px 140px 178px 205px;
+        z-index: 9;
+    }
+
+    &-item {
+        display: block;
+        width: 345px;
+        height: 224px;
+        padding-left: 38px;
+        background-color: $white-color;
+        box-shadow: 0px 25px 70px 10px rgba(0, 0, 0, 0.04);
+
+
+        &:first-child {
+            background-color: unset;
+            box-shadow: unset;
+
+        }
+
+        &-heading {
+            color: #0F0F10;
+            font-weight: 600;
+            font-size: 5rem;
+            letter-spacing: -0.02em;
+            line-height: 6.8rem;
+        }
+
+        &-desc {
+            padding-top: 18px;
+            color: #18181A;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+
+        &-subheading {
+            color: #0F0F10;
+            font-weight: 600;
+            font-size: 1.8rem;
+            padding-bottom: 16px;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: #242426;
+            padding-right: 67px;
+        }
+
+        img {
+            font-size: 3.4rem;
+            padding-top: 44px;
+            padding-bottom: 36px;
+        }
+
+    }
+
+}

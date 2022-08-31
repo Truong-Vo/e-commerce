@@ -1,0 +1,23 @@
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+
+}
+
+.grid.wide {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 240px;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

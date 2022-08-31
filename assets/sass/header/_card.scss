@@ -1,0 +1,63 @@
+    &-card {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 210px;
+        left: 743px;
+        width: 540px;
+        height: 484px;
+        z-index: 9;
+
+        &-goals {
+            display: inline-block;
+            padding: 20px;
+            width: 142px;
+            height: 161px;
+            padding: 20px;
+            background-color: $white-color;
+            margin: 54px 0 0 20px;
+            box-shadow: 30px 40px 150px -10px rgba(0, 0, 0, 0.18);
+        }
+
+        &-chages {
+            display: block;
+            width: 308px;
+            height: 295px;
+            margin-right: 30px;
+            float: right;
+            padding: 40px 35px;
+            background-color: $white-color;
+            box-shadow: 0px 0px 150px -20px rgba(0, 0, 0, 0.06);
+        }
+
+        &-text {
+            position: absolute;
+            font-weight: 500;
+            font-size: 1.4rem;
+            letter-spacing: 0.02em;
+            color: #535357;
+            width: 219px;
+            height: 130px;
+            padding: 40px 30px 30px;
+            line-height: 2rem;
+            font-style: italic;
+            bottom: 0;
+            right: 0;
+            clear: both;
+            box-shadow: -14px -20px 110px -40px rgba(0, 0, 0, 0.14);
+        }
+
+        &-comma {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            right: 30px;
+            bottom: 108px;
+            border-radius: 50%;
+            background-color: #A5E8C8;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }

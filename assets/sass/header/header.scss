@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+    height: 778px;
+
+    @import "background";
+    @import "logo";
+    @import "navbar";
+    @import "transaction";
+    @import "content";
+    @import "card";
+    @import "decoration";
+
+
+}

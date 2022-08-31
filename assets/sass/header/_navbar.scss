@@ -1,0 +1,57 @@
+    &-navbar {
+        padding: 48px 56px 0;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 118px;
+            height: 118px;
+            left: -49px;
+            top: 165px;
+            background: rgba(106, 224, 253, 0.45);
+            filter: blur(130px);
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin-left: 180px;
+            min-width: 263px;
+
+            i {
+                color: #EFE8EE;
+                display: inline-block;
+                margin-left: 12px;
+            }
+        }
+
+        &-item {
+            letter-spacing: -0.02em;
+            color: $white-color;
+        }
+
+        &-register {
+            flex: 1;
+            text-align: end;
+        }
+
+        &-account {
+            padding: 10px 18px;
+            font-size: 1.2rem;
+        }
+
+        &-login {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-right: 22px;
+            letter-spacing: -0.01em;
+            color: #0F0F10;
+        }
+    }

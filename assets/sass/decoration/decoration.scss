@@ -1,0 +1,26 @@
+.decoration-container {
+    position: absolute;
+    top: 110px;
+    left: -102px;
+}
+
+
+.decoration {
+    position: absolute;
+    display: inline-block;
+    width: 144.5px;
+    height: 103px;
+    clip-path: polygon(0 calc(100% - 43px), 100% 0, 100% 43px, 0 100%);
+    transform: rotate(174.54deg);
+    background-color: $medium-purple-color;
+}
+
+.decoration:nth-of-type(3n + 2) {
+    transform: rotate(174.54deg) translate(-144px, 17px);
+    background-color: #EEEEEE;
+}
+
+.decoration:nth-of-type(3n + 3) {
+    transform: rotate(174.54deg) translateY(-86px);
+    background-color: $orange;
+}

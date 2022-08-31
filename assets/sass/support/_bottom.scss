@@ -1,0 +1,34 @@
+&-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 116px;
+    padding-bottom: 74px;
+
+    &-content {
+        width: 234px;
+
+        &-icon {
+            // display: block;
+            width: 40px;
+            height: 40px;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: -0.01em;
+            color: $black-color;
+            margin: 24px 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #242426;
+        }
+    }
+
+
+}

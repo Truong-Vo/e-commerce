@@ -1,0 +1,87 @@
+&-transaction {
+    position: absolute;
+    width: 281px;
+    height: 177px;
+    left: 0;
+    bottom: 52px;
+    padding: 30px 25px;
+    background-color: $white-color;
+    box-shadow: 40px 50px 100px -30px rgba(28, 28, 28, 0.06);
+
+    h2 {
+        display: block;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: $black-color;
+        letter-spacing: -0.01em;
+        line-height: 2.8rem;
+        margin-bottom: 14px;
+    }
+
+    &-list {
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 13px;
+
+            &:first-child {
+                .header-transaction-item {
+                    background-color: #4A1758;
+                    color: $white-color;
+                }
+            }
+
+            &:last-child {
+                .header-transaction-item {
+                    background-color: #69E4FF;
+                    color: #1F434A;
+                }
+            }
+
+        }
+    }
+
+    &-item {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 3.6rem;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    &-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-label {
+        font-weight: 600;
+        font-size: 1.4rem;
+        letter-spacing: -0.02em;
+        color: #0F0F10;
+
+        span {
+            color: #C92851;
+        }
+    }
+
+    &-date {
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: -0.03em;
+    }
+
+    &-sub {
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+}
