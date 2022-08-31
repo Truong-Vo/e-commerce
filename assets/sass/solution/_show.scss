@@ -1,0 +1,16 @@
+&-show {
+    flex: 1;
+    padding: 60px 32px 113px 60px;
+    background-image: linear-gradient(0deg, #ECEEF2, #ECEEF2), linear-gradient(0deg, #F6F7FA, #F6F7FA);
+    background-clip: content-box, padding-box;
+
+    img {
+        width: 100px;
+        margin: 13px 16px;
+        vertical-align: middle;
+    }
+}
+
+@import "card1";
+@import "card2";
+@import "card3";

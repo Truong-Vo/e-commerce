@@ -1,0 +1,123 @@
+&-list {
+    position: relative;
+    margin: 0 2px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 322px;
+        height: 60px;
+
+    }
+}
+
+&-item {
+    display: flex;
+    align-items: center;
+    padding: 18px 14px;
+    background-color: $white-color;
+
+
+    &-icon {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+    }
+
+    &-title {
+        padding-left: 15px;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: -0.02em;
+        color: #0F1A26;
+        font-family: $font-main;
+    }
+
+    &-completed {
+        flex: 1;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #FF852F;
+    }
+
+    &:nth-child(1) {
+        .solution-item-icon {
+            border-color: #FF852F;
+        }
+
+        .solution-item-completed {
+            color: #FF852F;
+
+        }
+    }
+
+    &:nth-child(2) {
+        .solution-item-icon {
+            border-color: #979FA6;
+        }
+
+        .solution-item-completed {
+            color: #979FA6;
+
+        }
+    }
+
+    &:nth-child(3) {
+        .solution-item-icon {
+            border-color: #EC483F;
+        }
+
+        .solution-item-completed {
+            color: #EC483F;
+
+        }
+    }
+}
+
+&-item+.solution-item {
+    margin-top: 2px;
+}
+
+&-newtask {
+    position: absolute;
+    width: 322px;
+    height: 60px;
+    top: 170px;
+    left: -98px;
+    background-color: $white-color;
+    box-shadow: -40px -40px 60px -15px rgba(201, 201, 201, 0.36);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-icon {
+        --height: 20px;
+        width: var(--height);
+        height: var(--height);
+        border-radius: 50%;
+        background-color: #68E0A7;
+        text-align: center;
+
+
+        i {
+            font-size: 8px;
+            color: $white-color;
+            line-height: var(--height);
+        }
+    }
+
+    &-title {
+        flex: 1;
+        padding: 15px;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        color: $black-color;
+    }
+}
