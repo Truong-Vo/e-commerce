@@ -1,0 +1,102 @@
+&-card2 {
+    padding: 56px 54px;
+}
+
+
+&-chat1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 22px;
+
+    &-avatar {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: rgb(241, 179, 9);
+        overflow: hidden;
+        margin-right: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            // transform: scale(2);
+        }
+    }
+
+    &-content {
+        flex: 1;
+        background: #A5E8C8;
+        box-shadow: 0px 24px 48px rgba(93, 184, 141, 0.08);
+        border-radius: 30px 30px 30px 0px;
+        padding: 28px 54px 28px 35px;
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: #202023;
+            margin-bottom: 14px;
+        }
+
+        &-button {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            padding: 5px 10px;
+            background-color: #78CEA5;
+            color: $white-color ;
+            border-radius: 2px;
+            min-width: unset;
+        }
+    }
+}
+
+&-chat2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &-avatar {
+        display: inline-block;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background-color: rgb(241, 179, 9);
+        overflow: hidden;
+        margin-left: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            transform: scale(2.6) translateY(31%);
+        }
+    }
+
+    &-content {
+        flex: 1;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 10px rgba(84, 95, 122, 0.02);
+        border-radius: 30px 30px 0px 30px;
+        margin-left: 46px;
+        padding: 20px;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            color: #222222;
+        }
+
+        &-button {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            padding: 5px 10px;
+            background-color: #78CEA5;
+            color: $white-color ;
+            border-radius: 2px;
+            min-width: unset;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.testimonial {
+    position: relative;
+    height: 668px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 160px 150px 244px;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        clip-path: polygon(0 0, calc(100% - 416px) 0, calc(100% - 268px) 100%, 0 100%);
+        background-color: #AAEEFD;
+        z-index: -1;
+    }
+
+    &-blur1 {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: -56px;
+        width: 127px;
+        height: 127px;
+        background-color: rgba(201, 47, 255, 0.15);
+        filter: blur(130px);
+        z-index: 1;
+    }
+
+    &-blur2 {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 156px;
+        left: -156px;
+        width: 266px;
+        height: 266px;
+        background-color: rgba(201, 47, 255, 0.15);
+        filter: blur(280px);
+        z-index: 1;
+    }
+
+    &-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+
+    &-desc {
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 4.2rem;
+        letter-spacing: -0.01em;
+        color: #212127;
+    }
+
+    &-person {
+        margin-top: 70px;
+    }
+
+    &-name {
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        color: $text-heading;
+        letter-spacing: -0.02em;
+        margin-bottom: 2px;
+    }
+
+    &-position {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #3F5257;
+    }
+
+    &-avatar {
+        width: 346px;
+        height: 456px;
+        object-fit: cover;
+        margin-left: 97px;
+    }
+
+}

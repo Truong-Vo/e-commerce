@@ -1,0 +1,118 @@
+&-card3 {
+    margin: 70px 28px 23px;
+    padding: 44px 30px 70px;
+    background-color: $white-color;
+    position: relative;
+
+    h4 {
+        --height: 48px;
+        font-weight: 600;
+        font-size: 5.5rem;
+        height: var(--height);
+        line-height: var(--height);
+        letter-spacing: -0.03em;
+        color: $text-heading;
+        margin-bottom: 25px;
+
+        span {
+            color: #44465F;
+            font-weight: 400;
+            font-size: 2rem;
+        }
+    }
+
+    &-week {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: #898A97;
+        padding-bottom: 16px;
+
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 16px;
+        bottom: 0;
+        left: 0;
+        clip-path: polygon(0 0, 100% 100%, 0 100%);
+        background-color: #F6F7FA;
+    }
+}
+
+&-crown {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 91px;
+    right: 55px;
+    top: -47px;
+    border-radius: 50%;
+    background-color: $pink-red-color;
+    z-index: 9;
+
+    img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+&-user {
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px 0;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #FEBFC7;
+        margin-right: 12px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transform: translate(4px, 4px);
+        }
+    }
+
+    &-info {
+        flex: 1;
+    }
+
+    &-name {
+        color: $text-heading;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        letter-spacing: -0.01em;
+    }
+
+    &-online {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    &-point {
+        color: $pink-red-color;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+}

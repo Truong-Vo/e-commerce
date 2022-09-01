@@ -9,6 +9,11 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 170px;
+        flex: 1;
+
+        &:last-child {
+            margin-bottom: 160px;
+        }
 
         &:nth-of-type(2n + 2) {
             flex-flow: row-reverse;
