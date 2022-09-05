@@ -24,7 +24,7 @@
 
     &-bgc {
         height: 100%;
-        width: 935px;
+        width: calc(calc(100% / 2) + 214px);
         background-color: $pink-red-color;
         clip-path: polygon(0 0, 100% 0, calc(100% - 92px) calc(100% - 194px), 0 100%);
         position: absolute;

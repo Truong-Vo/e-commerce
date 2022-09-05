@@ -1,6 +1,11 @@
 .header {
     position: relative;
     height: 778px;
+    overflow: hidden;
+
+    &-wrap {
+        position: relative;
+    }
 
     @import "background";
     @import "logo";

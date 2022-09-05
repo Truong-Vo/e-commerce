@@ -2,8 +2,8 @@
 
 
     &-flag {
-        top: 401px;
-        right: 187px;
+        top: 398px;
+        right: -92px;
         left: unset;
     }
 
@@ -23,17 +23,19 @@
     }
 
     &-item1 {
-        top: 194px;
-        right: 166px;
+        top: -20px;
+        right: 7px;
         background-color: #ABEFFF !important;
         transform: rotate(-12.42deg) !important;
+        z-index: -1;
     }
 
     &-item2 {
-        top: 266px;
-        right: 139px;
+        top: 60px;
+        right: -13px;
         background-color: #F8F8F8 !important;
         transform: rotate(-12.42deg) !important;
+        z-index: -1;
     }
 
     &-list {

@@ -66,6 +66,7 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
+  height: 100%;
 }
 
 .container {
@@ -83,6 +84,8 @@ p {
   position: absolute;
   top: 110px;
   left: -102px;
+  width: 290px;
+  height: 206px;
 }
 
 .decoration {
@@ -108,6 +111,10 @@ p {
 .header {
   position: relative;
   height: 778px;
+  overflow: hidden;
+}
+.header-wrap {
+  position: relative;
 }
 .header::before {
   position: absolute;
@@ -133,7 +140,7 @@ p {
 }
 .header-bgc {
   height: 100%;
-  width: 935px;
+  width: calc(50% + 214px);
   background-color: #D52A56;
   clip-path: polygon(0 0, 100% 0, calc(100% - 92px) calc(100% - 194px), 0 100%);
   position: absolute;
@@ -345,7 +352,7 @@ p {
   display: block;
   content: "";
   top: 210px;
-  left: 743px;
+  right: 157px;
   width: 540px;
   height: 484px;
   z-index: 9;
@@ -400,8 +407,8 @@ p {
   justify-content: center;
 }
 .header-decoration-flag {
-  top: 401px;
-  right: 187px;
+  top: 398px;
+  right: -92px;
   left: unset;
 }
 .header-decoration-item {
@@ -417,16 +424,18 @@ p {
   transform: rotate(7.56deg) translate(144px, -17px);
 }
 .header-decoration-item1 {
-  top: 194px;
-  right: 166px;
+  top: -20px;
+  right: 7px;
   background-color: #ABEFFF !important;
   transform: rotate(-12.42deg) !important;
+  z-index: -1;
 }
 .header-decoration-item2 {
-  top: 266px;
-  right: 139px;
+  top: 60px;
+  right: -13px;
   background-color: #F8F8F8 !important;
   transform: rotate(-12.42deg) !important;
+  z-index: -1;
 }
 .header-decoration-list {
   display: inline-block;
@@ -581,6 +590,7 @@ p {
 
 .choose {
   position: relative;
+  overflow: hidden;
 }
 .choose-bgc {
   position: absolute;
