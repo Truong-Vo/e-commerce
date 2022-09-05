@@ -3,10 +3,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 0 140px;
-    padding: 203px 329px 67px 283px;
+    padding-top: 203px;
+    padding-bottom: 67px;
 
     &-show {
         position: relative;
+        margin-left: 283px;
+        display: inline-block;
     }
 
     &-img {
@@ -111,7 +114,7 @@
 
     &-abstract {
         position: absolute;
-        bottom: -60px;
+        bottom: -67px;
         left: -101px;
         z-index: -1;
     }

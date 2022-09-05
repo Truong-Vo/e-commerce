@@ -21,6 +21,7 @@ html {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 li {
@@ -1142,10 +1143,13 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 0 140px;
-  padding: 203px 329px 67px 283px;
+  padding-top: 203px;
+  padding-bottom: 67px;
 }
 .premium-show {
   position: relative;
+  margin-left: 283px;
+  display: inline-block;
 }
 .premium-img {
   object-fit: contain;
@@ -1235,7 +1239,7 @@ p {
 }
 .premium-abstract {
   position: absolute;
-  bottom: -60px;
+  bottom: -67px;
   left: -101px;
   z-index: -1;
 }
