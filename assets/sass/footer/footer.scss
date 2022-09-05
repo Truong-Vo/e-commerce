@@ -1,0 +1,123 @@
+.footer {
+    position: relative;
+
+    &::before {
+        --space: 30px;
+        position: absolute;
+        display: block;
+        content: "";
+        top: calc(var(--space) * -1);
+        left: 0;
+        width: 100%;
+        height: calc(100% + var(--space));
+        background-color: #461854;
+        clip-path: polygon(0 0, 100% var(--space), 100% 100%, 0 100%);
+        z-index: -1;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 164px;
+        padding-left: 202px;
+        padding-right: 219px;
+        padding-bottom: 145px;
+        color: $white-color;
+        gap: 0 246px;
+
+    }
+
+    &-subcribe {
+        display: flex;
+        flex-direction: column;
+
+
+        .header-logo {
+            margin-bottom: 35px;
+        }
+    }
+
+    &-subtext {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        opacity: 0.88;
+        color: $white-color;
+        font-family: $font-main;
+        padding-bottom: 20px;
+    }
+
+    &-input {
+        width: 269px;
+        height: 43px;
+        background-color: #2F0F38;
+
+        input {
+            line-height: 4.3rem;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0 14px;
+            font-size: 1.3rem;
+            letter-spacing: -0.02em;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+
+    &-text {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        width: 220px;
+        padding: 30px 0;
+    }
+
+    &-icon {
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 0 12px;
+        }
+
+        &-item {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $white-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 1.6rem;
+                color: #03A9F4;
+            }
+        }
+    }
+
+    &-solutions {
+        flex: 1;
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            padding-bottom: 25px;
+        }
+
+        ul {
+            li {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                letter-spacing: -0.01em;
+                color: rgba(255, 255, 255, 0.55);
+            }
+
+            li+li {
+                margin-top: 14px;
+            }
+
+        }
+    }
+}
