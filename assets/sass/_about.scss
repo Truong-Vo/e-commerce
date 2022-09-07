@@ -1,0 +1,75 @@
+.about {
+    padding: 63px 0;
+
+    &-content {
+        text-align: center;
+    }
+
+    &-label {
+        color: $label-color;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.42em;
+        margin-bottom: 8px;
+    }
+
+    &-heading {
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: calc(61 / 50);
+        max-width: 530px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-card {
+        @include flex(center, center, 0 40px);
+        padding-top: 74px;
+
+        &__item {
+            background: linear-gradient(131.83deg, #FFFAFA 0%, #FFF7F7 99.21%);
+            background-color: #fff;
+            border-radius: 16px;
+            max-width: 283px;
+            width: 100%;
+            padding: 35px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                inset: 0;
+                margin: -2px;
+                background: linear-gradient(to right top, #2979ff, #07a787);
+                border-radius: 18px;
+                z-index: -1;
+            }
+        }
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+            background-color: $white-color;
+            box-shadow: 20px 25px 70px rgba(249, 218, 213, 0.8);
+            border-radius: 8px;
+            padding-left: 10px;
+            margin-bottom: 41px;
+        }
+
+        &__heading {
+            font-weight: 600;
+            font-size: 1.7rem;
+            line-height: calc(18 / 17);
+            padding-bottom: 16px;
+        }
+
+        &__desc {
+            font-size: 1.3rem;
+            line-height: calc(22 / 13);
+            color: $desc-color;
+            padding-bottom: 15px;
+        }
+    }
+}

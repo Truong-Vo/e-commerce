@@ -1,0 +1,18 @@
+&-top {
+    padding: 35px 0 0;
+    @include flex(center, space-between);
+
+    &__menu {
+        @include flex(center, center, 0 34px);
+        flex: 1;
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+
+    &__btn {
+        &__started {
+            padding: 16px 28px;
+            background: linear-gradient(180deg, #FFD9CA 0%, #FDC9B4 100%);
+        }
+    }
+}

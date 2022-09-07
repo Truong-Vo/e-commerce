@@ -1,0 +1,8 @@
+.choose {
+    @include flex(start, space-between);
+    margin-bottom: 69px;
+    gap: 0 94px;
+
+    @import "content";
+    @import "card";
+}

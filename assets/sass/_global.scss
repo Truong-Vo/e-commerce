@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    text-rendering: optimizeSpeed;
+    font-weight: 400;
+    height: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $href-color;
+    font-weight: 500;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-color;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+
+// content-section

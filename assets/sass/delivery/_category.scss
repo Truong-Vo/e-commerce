@@ -1,0 +1,56 @@
+&-category {
+    position: relative;
+    max-width: 235px;
+    width: 100%;
+    border-right: 3px solid #FDF6F4;
+    margin-left: 264px;
+
+    &__card1 {
+        @include flex(center, flex-start, 0 14px);
+        background-color: #FF8351;
+        box-shadow: 0px 30px 50px rgba(255, 131, 81, 0.06);
+        border-radius: 10px;
+        margin-right: 65px;
+        padding: 7px;
+        margin-bottom: 44px;
+
+        img {
+            width: 43px;
+            height: 43px;
+            background-color: #FDFEFE;
+            box-shadow: 0px 26.2887px 35.0515px rgba(122, 122, 122, 0.08);
+            border-radius: 8px;
+        }
+
+        p {
+            color: $white-color
+        }
+    }
+
+    &__card2 {
+        @include flex(center, flex-start, 0 20px);
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: calc(14 / 12);
+            text-transform: capitalize;
+            color: $card-color;
+        }
+
+        &:not(:first-child) {
+            margin-top: 50px;
+        }
+    }
+
+    &__scrollbar {
+        @include pseudo(3px, 44px, 12px 0 auto auto);
+        transform: translateX(3px);
+        background-color: #584A40;
+    }
+}

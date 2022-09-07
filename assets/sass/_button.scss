@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    min-width: 89px;
+    line-height: calc(16 / 14);
+    border-radius: 8px;
+    color: $heading-color;
+
+    &-primary {
+        padding: 22px 42px;
+        background: linear-gradient(180deg, #FF7A45 0%, #FF5713 100%);
+        color: $white-color;
+    }
+
+    &-secondary {
+        padding: 16px 26px;
+        background-color: $white-color;
+    }
+
+    &:not(:first-of-type) {
+        margin-left: 14px;
+    }
+}

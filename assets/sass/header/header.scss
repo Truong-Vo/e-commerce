@@ -1,0 +1,13 @@
+.header {
+    background: linear-gradient(108.33deg, #FFEFED 10.3%, #FFECEA 100%);
+    max-height: 748px;
+    height: 100%;
+
+    &-container {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    @import "top";
+    @import "bottom";
+}

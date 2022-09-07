@@ -1,0 +1,39 @@
+&-screen {
+    flex: 1;
+    background-color: #FFF9F8;
+    border-radius: 25px;
+    margin-right: 230px;
+    position: relative;
+
+    .header-bottom__content {
+        padding: 60px 0 60px 60px;
+        max-width: unset;
+    }
+
+    .header-bottom__heading {
+        font-weight: 600;
+        font-size: 3.8rem;
+        line-height: calc(50 / 38);
+        padding-bottom: 17px;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .header-bottom__desc {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: calc(28 / 12);
+        color: #5A514A;
+        padding-bottom: 34px;
+        padding-right: unset;
+        max-width: 295px;
+        width: 100%;
+    }
+
+    &__decoration {
+        @include abs(207px auto auto 369px);
+        width: 330px;
+        filter: drop-shadow(20px 30px 100px rgba(221, 160, 152, 0.3));
+        transform: rotate(31.53deg);
+    }
+}

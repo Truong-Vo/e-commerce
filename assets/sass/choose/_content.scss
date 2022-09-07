@@ -1,0 +1,58 @@
+&-content {
+    @include flex(end, space-between);
+    margin-left: 216px;
+    height: 530px;
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+&-image {
+    margin-top: auto;
+    margin-left: 83px;
+    margin-right: 20px;
+}
+
+&-chef {
+    @include abs(auto auto 0 176px);
+}
+
+&-ellipse {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(61.54% 61.54% at 42.31% 38.46%, #FFB6AA 0%, #FF8452 100%);
+    box-shadow: 2px 14px 16px rgba(255, 135, 87, 0.1);
+}
+
+&-quality {
+    @include abs(71px auto auto 0);
+    border-radius: 8px 8px 0px 8px;
+    background-color: $white-color;
+    padding: 20px 22px;
+    width: 185px;
+
+    &__heading {
+        font-weight: 500;
+        line-height: calc(21 / 14);
+        margin-bottom: 14px;
+    }
+
+    &__item {
+        @include flex(center, flex-start);
+        background: #FFF8F7;
+        border: 1px solid #FBEFEB;
+        border-radius: 4px;
+        height: 30px;
+
+        img {
+            margin-left: 10px;
+            margin-right: 8px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+}

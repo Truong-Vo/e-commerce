@@ -1,0 +1,35 @@
+.download {
+    margin: 150px 140px 114px;
+    background: linear-gradient(131.83deg, #FFFAFA 0%, #FFF7F7 99.21%);
+    border-radius: 16px;
+    position: relative;
+
+    .choose {
+        padding-left: 120px;
+
+        &-card {
+            margin-top: 110px;
+            margin-bottom: 100px;
+            margin-right: unset;
+            max-width: 408px;
+            width: 100%;
+
+            &__heading {
+                padding-bottom: 20px;
+            }
+
+            &__desc {
+                font-size: 1.6rem;
+                line-height: calc(30 / 16);
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+
+    &-image {
+        @include abs(auto 77px 0 auto);
+    }
+
+
+}

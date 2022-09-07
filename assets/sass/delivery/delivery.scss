@@ -1,0 +1,7 @@
+.delivery {
+    @include flex(center, center, 0 78px);
+    padding-bottom: 130px;
+
+    @import "category";
+    @import "screen";
+}

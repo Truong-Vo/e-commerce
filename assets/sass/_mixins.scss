@@ -1,0 +1,22 @@
+@mixin flex($align: "baseline", $just: "center", $gap: 0) {
+    display: flex;
+    align-items: $align;
+    justify-content: $just;
+    gap: $gap;
+}
+
+@mixin abs($inset : 'auto') {
+    position: absolute;
+    inset: $inset;
+    z-index: 1;
+}
+
+@mixin pseudo($width: 0, $height: 0, $inset : 'auto') {
+    position: absolute;
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    inset: $inset;
+    z-index: 1;
+}
